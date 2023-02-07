@@ -215,6 +215,18 @@ header nav a:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .arabalar_model {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  .arabalar_model {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .dis {
   color: white;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 10%, black), url(images/exterior-4.jpg);

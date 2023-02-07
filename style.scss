@@ -113,7 +113,7 @@ header {
 
         img {
             max-width: 200px;
-            mix-blend-mode: darken;
+            mix-blend-mode: darken;            
         }
 
         button{
@@ -191,11 +191,19 @@ header {
     }
     img{
         max-width: 350px;
-        mix-blend-mode: darken;        
+        mix-blend-mode: darken;               
     }
     &_model{
         display: flex;
         justify-content: space-around;
+        @include mobile{       
+            flex-direction: column;
+            align-items: center;
+        }
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+        } 
     }
     button{        
         @extend %btn-3;
